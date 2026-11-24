@@ -1,5 +1,11 @@
 # Invoice Exception Analysis
 
+### Scenario Context 
+
+The worked examples in this section use the secondary synthetic IT equipment procurement scenario.
+The scenario is used to demonstrate invoice-exception analysis independently of the primary Nova Manufacturing raw-material procurement case.
+
+
 ## 1. Purpose
 
 This document explains how invoice exceptions are identified, classified, analyzed, resolved, and prevented in the synthetic SAP S/4HANA Procure-to-Pay learning project.
