@@ -1,4 +1,8 @@
-# P2P Defect Management Guide
+##0. Portfolio Boundary
+
+The defects in this folder are illustrative functional scenarios created to demonstrate defect-management methodology.
+They were not identified during an actual SAP implementation, SIT, UAT, or production-support engagement.
+Any status, root cause, resolution, or retest outcome shown is simulated for learning purposes.# P2P Defect Management Guide
 
 ## 1. Purpose
 
