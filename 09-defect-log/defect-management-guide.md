@@ -1,4 +1,4 @@
-##0. Portfolio Boundary
+## 0. Portfolio Boundary
 
 The defects in this folder are illustrative functional scenarios created to demonstrate defect-management methodology.
 They were not identified during an actual SAP implementation, SIT, UAT, or production-support engagement.
