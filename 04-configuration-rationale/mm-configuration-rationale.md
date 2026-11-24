@@ -2,9 +2,9 @@
 
 ## 1. Purpose
 
-This document explains the Materials Management (MM) configuration concepts that support the Nova Manufacturing Pvt. Ltd. Procure-to-Pay learning scenario in SAP S/4HANA.
+This document explains the business rationale behind selected SAP S/4HANA Materials Management design decisions for the synthetic Nova Manufacturing Procure-to-Pay scenario.
 
-It focuses on organizational assignments, master data, purchasing, inventory management, material valuation, logistics invoice verification, automatic account determination, and integration with FI.
+The focus is on understanding why a functional consultant makes a design decision rather than reproducing a customer configuration.
 
 > **Portfolio note:** This is a conceptual configuration rationale using synthetic data, not evidence of configuration in a live system.
 
