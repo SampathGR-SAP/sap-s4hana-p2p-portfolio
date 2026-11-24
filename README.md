@@ -1,139 +1,267 @@
-# Hi, I'm Sampath G R 👋
+# SAP S/4HANA FI-MM Procure-to-Pay Learning Portfolio
 
-Account Payable Analyst | Invoice Processing | SAP S/4HANA FI & MM Learner | Procure-to-Pay (P2P)
+A structured SAP S/4HANA FI-MM learning portfolio that translates Procure-to-Pay (P2P) business requirements into process design, accounting logic, configuration rationale, master data, invoice controls, functional test design, exception analysis, and user documentation.
 
-I am an Accounts Payable professional currently building hands-on knowledge in **SAP S/4HANA Finance (FI)** and **Materials Management (MM)**, with a strong focus on the **Procure-to-Pay (P2P) process**.
+---
 
-My current learning portfolio focuses on understanding how procurement, invoice processing, accounting, and vendor payments integrate within SAP S/4HANA.
+## Project Overview
 
-## 🎯 Career Focus
-My goal is to develop practical SAP S/4HANA FI/MM skills and transition toward an **SAP FI/FICO or FI-MM functional consulting career**.
+This repository documents my independent learning of SAP S/4HANA Finance (FI) and Materials Management (MM), with a specific focus on the end-to-end Procure-to-Pay process and FI-MM integration.
 
-I am building this GitHub portfolio to document my learning through business scenarios, process documentation, accounting examples, and SAP FI-MM integration concepts.
+The project follows this functional lifecycle:
 
-## 💼 Functional Areas
+```text
+Business Requirement
+        ↓
+SAP P2P Process Design
+        ↓
+FI-MM Accounting Impact
+        ↓
+Configuration Rationale
+        ↓
+Master Data
+        ↓
+Three-Way Match and Invoice Verification
+        ↓
+Functional Test Design
+        ↓
+Exception Analysis
+        ↓
+Illustrative Defect Management
+        ↓
+User Documentation
+```
 
-	Ø Accounts Payable (AP)
-	Ø Procure-to-Pay (P2P)
-	Ø SAP S/4HANA Finance (FI)
-	Ø SAP Materials Management (MM)
-	Ø FI-MM Integration
-	Ø Vendor Invoice Processing
-	Ø Purchase Order (PO) Process
-	Ø Goods Receipt (GR)
-	Ø Invoice Receipt (IR)
-	Ø GR/IR Clearing
-	Ø Three-Way Match
-	Ø Blocked Invoice concepts
-	Ø Vendor Payments and Clearing
+---
 
-## 🔄 P2P Process I'm Learning
+## Project Boundary
 
-    Purchase Requisition (PR)
-            ↓
-    Purchase Order (PO)
-            ↓
-    Goods Receipt (GR)
-            ↓
-    Supplier Invoice / Invoice Receipt (IR)
-            ↓
-    Three-Way Match
-            ↓
-    Invoice Posting
-            ↓
-    Vendor Payment
-            ↓
-    Clearing
+This is an independent learning project created using synthetic business data.
 
-This helps me understand the end-to-end relationship between procurement activities in SAP MM and financial accounting in SAP FI.
+The repository demonstrates my understanding of SAP S/4HANA FI/MM business processes, integration concepts, functional design, and testing methodology.
 
-## 📂 SAP S/4HANA Learning Portfolio
-My portfolio is being developed step by step around practical Procure-to-Pay business scenarios.
+It does **not** represent:
 
-01. Business Requirements
-   
-    	• P2P Business Scenario
-	    • P2P Glossary
-	    • Business Requirements
-	
-2. P2P Process Flow
-   
-	    • Purchase Requisition
-	    • Purchase Order
-	    • Goods Receipt
-	    • Invoice Receipt
-	    • Payment and Clearing
-	
-3. Master Data
-   
-	    • Supplier / Business Partner concepts
-	    • Material Master concepts
-	    • Payment Terms
-	    • Company Code concepts
-	
-4. Invoice Processing
-   
-    	• PO-based Invoice Processing
-    	• Three-Way Matching
-	    • Invoice Verification
-	    • Blocked Invoice concepts
-	
-5. FI-MM Integration
-   
-		• GR/IR concepts
-		• Accounting impact of Goods Receipt
-		• Accounting impact of Invoice Receipt
-		• Vendor Liability
-		• Payment and Clearing
+- A customer implementation
+- Production-system configuration
+- Employer project work
+- Live SAP transaction execution
+- Completed SIT or UAT in an SAP environment
+- SAP implementation experience
 
+Configuration content represents conceptual functional design and configuration rationale unless explicitly stated otherwise. Functional test cases are designed scenarios and are not presented as transactions executed in a live SAP system.
 
-## 🧾 Example FI-MM Accounting Flow
+---
+
+## SAP Scope
+
+The portfolio is aligned to concepts relevant to **SAP S/4HANA Cloud Private Edition**.
+
+Primary functional areas covered:
+
+- SAP Financial Accounting (FI)
+- SAP Materials Management (MM)
+- Procure-to-Pay (P2P)
+- Accounts Payable
+- FI-MM Integration
+- Supplier / Business Partner concepts
+- Material Master
+- Purchase Requisition and Purchase Order
+- Goods Receipt and Invoice Verification
+- Three-Way Match and GR/IR Clearing
+- Automatic Account Determination concepts
+- Invoice Exceptions
+- Supplier Liability, Payment, and Clearing
+- Functional Testing and Defect Management concepts
+
+---
+
+## Business Scenarios
+
+### Primary Scenario: Nova Manufacturing
+
+The main end-to-end scenario is based on a fictional manufacturing organization called **Nova Manufacturing**.
+
+| Object | Synthetic Value |
+|---|---|
+| Company Code | NM01 |
+| Plant | PL01 |
+| Purchasing Organization | NP01 |
+| Purchasing Group | PG01 |
+| Storage Location | SL01 |
+| Supplier | V10001 |
+| Material | RM-1001 |
+
+Example procurement: **100 units × INR 500 = INR 50,000**.
+
+This scenario demonstrates business requirements, P2P flow, FI-MM accounting, enterprise structure, configuration rationale, master data, and three-way matching.
+
+### Secondary Scenario: IT Equipment Procurement
+
+A second synthetic scenario is used for functional testing, invoice exceptions, illustrative defect-management examples, and user documentation.
+
+| Object | Synthetic Value |
+|---|---|
+| Company Code | SM01 |
+| Plant | BLR1 |
+| Purchasing Organization | IN01 |
+| Purchasing Group | P01 |
+| Storage Location | RM01 |
+| Supplier | SUP1001 |
+| Material | LAPTOP-001 |
+
+Example procurement: **10 laptops × INR 50,000 = INR 500,000**.
+
+An illustrative PO value above INR 500,000 may be used in workflow testing to demonstrate an additional approval condition. This secondary scenario should not be interpreted as a separate real implementation.
+
+---
+
+## End-to-End P2P Process
+
+```text
+Business Requirement
+        ↓
+Purchase Requisition
+        ↓
+Source Determination
+        ↓
+Purchase Order and Approval
+        ↓
 Goods Receipt
-Dr. Inventory / Expense
-Cr. GR/IR Clearing
+        ↓
+Supplier Invoice
+        ↓
+Invoice Verification
+(PO ↔ Goods Receipt ↔ Invoice)
+        ↓
+Invoice Posting / Payment Block
+        ↓
+Payment and Clearing
+```
 
-Invoice Receipt
-Dr. GR/IR Clearing
-Cr. Vendor
+The exact process may vary depending on material, service, account assignment, organizational design, and system configuration.
 
-Vendor Payment
-Dr. Vendor
-Cr. Bank
+---
 
-These examples are simplified learning scenarios used to understand the accounting impact of the Procure-to-Pay process.
+## Key FI-MM Accounting Flow
 
-## 📚 Currently Learning
-	• SAP S/4HANA FI fundamentals
-	• SAP S/4HANA MM fundamentals
-	• Accounts Payable in SAP
-	• Procure-to-Pay lifecycle
-	• FI-MM integration
-	• GR/IR accounting
-	• Invoice verification
-	• Vendor payment and clearing
-	• Business process documentation
+The following entries are simplified learning examples.
 
-## 🚀 Portfolio Goal
-The objective of this portfolio is to demonstrate my understanding of:
+### Purchase Order
 
-Business Requirement → SAP Process → Transaction → Accounting Impact → FI-MM Integration
+Normally, no FI accounting document is generated when a standard purchase order is created.
 
-I will continue adding structured business scenarios and practical learning examples as I develop my SAP S/4HANA skills.
+### Goods Receipt – Stock Material
 
-## 🔐 Disclaimer
-All business scenarios, company names, supplier information, invoice numbers, purchase orders, financial values, and other data used in this portfolio are synthetic and created solely for learning purposes.
+```text
+Dr Inventory
+    Cr GR/IR Clearing
+```
 
-This portfolio does not contain confidential information from any current or previous employer.
+### Goods Receipt – Consumable / Account-Assigned Purchase
+
+```text
+Dr Expense / Consumption
+    Cr GR/IR Clearing
+```
+
+### Supplier Invoice
+
+```text
+Dr GR/IR Clearing
+Dr Recoverable Input Tax, where applicable
+    Cr Supplier
+```
+
+### Supplier Payment
+
+```text
+Dr Supplier
+    Cr Bank
+```
+
+Actual postings depend on material valuation, account assignment, tax treatment, price control, movement type, invoice variance, and automatic account determination.
+
+---
+
+## Repository Navigation
+
+| Section | Purpose |
+|---|---|
+| [01 – Business Requirements](./01-business-requirements/) | Primary scenario, requirements, assumptions, and terminology |
+| [02 – Process Flows](./02-process-flows/) | End-to-end P2P process and responsibilities |
+| [03 – Accounting Entries](./03-accounting-entries/) | FI-MM postings, GR/IR, liability, payment, and reconciliation |
+| [04 – Configuration Rationale](./04-configuration-rationale/) | Business rationale for FI and MM design decisions |
+| [05 – Master Data Templates](./05-master-data-templates/) | Synthetic supplier and material templates with quality checks |
+| [06 – Three-Way Match](./06-three-way-match/) | Exact match, variance, missing receipt, and invoice controls |
+| [07 – Functional Test Design](./07-test-scripts/) | Positive, negative, boundary, reversal, and integration scenarios |
+| [08 – Invoice Exception Analysis](./08-exception-analysis/) | Root cause, corrective action, preventive action, and ownership |
+| [09 – Illustrative Defect Management](./09-defect-log/) | Simulated defects, prioritization, resolution, and retest concepts |
+| [10 – Functional User Guide](./10-user-manual/) | Conceptual P2P user procedures and troubleshooting |
+| [11 – Project Presentation](./11-project-presentation/) | Recruiter-friendly portfolio overview |
+
+---
+
+## Portfolio Highlights
+
+This project demonstrates my developing ability to connect:
+
+**Business Requirement → SAP Process → Configuration Rationale → Transaction Logic → Accounting Impact → Controls → Test Design**
+
+Key strengths demonstrated:
+
+- End-to-end P2P understanding
+- Accounts Payable process knowledge
+- FI-MM integration and GR/IR concepts
+- Three-way matching and invoice exception analysis
+- Functional requirement and process documentation
+- Master-data and configuration-rationale thinking
+- Functional testing methodology
+- Structured user documentation
+
+---
+
+## Start Here – Hiring Managers and Recruiters
+
+For a quick review:
+
+1. [Business Context](./01-business-requirements/)
+2. [FI-MM Integration](./03-accounting-entries/)
+3. [Functional Design](./04-configuration-rationale/)
+4. [Invoice Controls](./06-three-way-match/)
+5. [Testing Methodology](./07-test-scripts/)
+6. [Problem Analysis](./08-exception-analysis/)
+7. [Executive Overview](./11-project-presentation/)
+
+---
+
+## Limitations
+
+I use this portfolio to apply SAP functional concepts through synthetic scenarios rather than claim experience from a customer SAP implementation.
+
+- No production SAP data is used.
+- No customer configuration is reproduced.
+- No employer procedures are included.
+- No real supplier, invoice, PO, bank, tax, or employee information is included.
+- Test cases are design artifacts unless explicitly identified as executed.
+- Illustrative defect outcomes do not represent completed SIT or UAT.
+
+---
+
+## Disclaimer
+
+All company names, organizational structures, supplier information, material data, purchase orders, invoices, financial values, test cases, and defect examples used in this repository are synthetic and created solely for learning purposes.
+
+This repository does not contain confidential information from any current or previous employer.
 
 SAP and SAP S/4HANA are trademarks of SAP SE. This is an independent learning portfolio and is not affiliated with or endorsed by SAP SE or any employer.
 
-📫 Connect With Me
-I am interested in connecting with professionals working in:
-	• SAP S/4HANA Finance
-	• SAP FICO
-	• SAP MM
-	• Procure-to-Pay
-	• Accounts Payable
-	• FI-MM Integration
-    
-Thanks for visiting my profile!
+---
+
+## Author
+
+**Sampath G R**
+
+Accounts Payable professional developing SAP S/4HANA FI/MM functional knowledge with a focus on Procure-to-Pay and FI-MM integration.
+
+GitHub: [SampathGR-SAP](https://github.com/SampathGR-SAP)
