@@ -329,6 +329,12 @@ After payment processing, the supplier invoice and corresponding payment can be 
 Before Clearing: Supplier Invoice Open
 After Clearing:  Supplier Invoice Cleared
 Remaining Open Liability: ₹0
+
+Payment and automatic clearing
+F110 / F-53 as applicable
+
+Manual clearing or residual-item review
+F-44 where required
 ```
 
 The purpose is to ensure that the supplier invoice and payment are correctly reflected in AP.
