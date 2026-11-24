@@ -1,5 +1,12 @@
 # P2P Functional Testing Approach
 
+## 0. Testing Boundary
+
+This document describes a functional testing approach for the secondary synthetic IT equipment procurement scenario.
+The test cases represent test design and expected system behavior.
+They have not been executed in a live SAP S/4HANA environment, and no SIT or UAT execution is claimed.
+
+
 ## 1. Purpose
 
 This document describes the functional testing approach for the synthetic SAP S/4HANA Procure-to-Pay (P2P) learning project. It explains how the configured procurement process will be checked from purchase requisition through supplier invoice posting.
