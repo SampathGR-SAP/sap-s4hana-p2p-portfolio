@@ -323,13 +323,13 @@ This is a simplified example. Actual payment accounting can involve bank-clearin
 
 ## 15. Clearing
 
-After payment processing, the supplier invoice and corresponding payment can be cleared.
+Supplier payment may be processed through the automatic payment program or through an appropriate manual payment process, depending on the scenario.
+
+Automatic payment processing normally clears the selected supplier open items as part of the payment process.
+
+Manual clearing or residual-item review may be performed separately where required.
 
 ```text
-Before Clearing: Supplier Invoice Open
-After Clearing:  Supplier Invoice Cleared
-Remaining Open Liability: ₹0
-
 Payment and automatic clearing
 F110 / F-53 as applicable
 
