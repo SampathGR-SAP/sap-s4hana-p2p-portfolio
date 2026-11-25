@@ -305,6 +305,7 @@ Actual SAP behavior depends on master data, PO design, invoice-verification sett
 ## 15. References
 
 - SAP Learning - [Processing Invoices](https://learning.sap.com/courses/inventory-management-and-physical-inventory-in-sap-s-4hana/processing-invoices)
+- SAP Learning - Understanding Purchasing (MM Integration)(https://learning.sap.com/courses/configuring-additional-settings-in-financial-accounting-in-sap-s-4hana/understanding-purchasing-mm-integration)
 - SAP Learning - [Handling Variances Without Item Reference](https://learning.sap.com/courses/exploring-foundations-of-logistics-invoice-verification-in-sap-s-4hana-cloud-private-edition/handling-variances-without-item-reference)
 - SAP Learning - [Maintaining Business Partner Master Data](https://learning.sap.com/courses/business-processes-in-sap-s-4hana-sourcing-procurement/maintaining-business-partner-master-data)
 - SAP Help Portal - [WRX: GR/IR Clearing Account](https://help.sap.com/docs/s4hana-best-practices/ycoa/wrx-gr-ir-clearing-account?locale=en-US)
