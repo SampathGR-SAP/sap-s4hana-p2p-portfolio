@@ -392,7 +392,7 @@ By completing this project, I aim to demonstrate an understanding of:
 
 ## 16. Project Deliverables
 
-The repository will gradually include:
+The repository includes:
 
 - Business scenario
 - P2P glossary
@@ -406,15 +406,13 @@ The repository will gradually include:
 - Defect log
 - User guide
 - Project presentation
-- Interview questions
-- Lessons learned
 
 ---
 
 ## 17. Repository Structure
 
 ```text
-sap-p2p-process-design/
+sap-s4hana-p2p-portfolio/
 ├── README.md
 ├── 01-business-requirements/
 ├── 02-process-flows/
@@ -427,8 +425,6 @@ sap-p2p-process-design/
 ├── 09-defect-log/
 ├── 10-user-manual/
 ├── 11-project-presentation/
-├── 12-interview-questions/
-└── 13-lessons-learned/
 ```
 
 ---
