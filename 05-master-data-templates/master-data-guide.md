@@ -311,23 +311,8 @@ These sheets provide learning sources, keyboard shortcuts, safe-working notes, a
 
 Actual ownership depends on the organization's governance and segregation-of-duties design.
 
-## 11. Pre-upload checklist
 
-Before uploading, confirm all of the following:
-
-- [ ] The folder name is exactly `05-master-data-templates`.
-- [ ] The two Excel file names match the required names.
-- [ ] The guide file is named `master-data-guide.md`.
-- [ ] All three files open correctly.
-- [ ] Only fictional data is included.
-- [ ] No real bank account, tax ID, supplier, employer, or personal data is present.
-- [ ] Formula cells were not overwritten.
-- [ ] The quality-check sheets were reviewed.
-- [ ] The change logs were updated if edits were made.
-- [ ] No duplicate files such as `(1)`, `final`, `corrected`, or `copy` are being uploaded.
-
-
-## 12. Scope and limitations
+## 11. Scope and limitations
 
 These templates are not SAP upload programs, migration files, or production data models.
 
@@ -342,6 +327,12 @@ They do not replace:
 - Role and authorization design
 - Migration mapping and load validation
 - SAP Fiori or SAP GUI execution
+
+## 12. Synthetic Data Disclaimer
+
+All supplier, material, organizational, financial, and identifying data used in this folder is fictional or synthetic and created solely for learning purposes.
+
+No confidential employer, supplier, customer, banking, tax, or personal data is included.
 
 ## 13. References
 
