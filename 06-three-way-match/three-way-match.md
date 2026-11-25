@@ -306,16 +306,14 @@ Actual SAP behavior depends on master data, PO design, invoice-verification sett
 
 The following SAP resources are included as learning references. Availability of specific applications, transactions, and functionality depends on the SAP S/4HANA edition, release, activated scope, configuration, and assigned user roles.
 
-- SAP Learning - Entering an Invoice for Stock Material (https://learning.sap.com/courses/business-processes-in-sap-s-4hana-sourcing-and-procurement/entering-an-invoice-for-stock-material_c5215178-39f9-4023-8c54-2a8976f9566a)
+- SAP Learning - **Entering an Invoice for Stock Material** (https://learning.sap.com/courses/business-processes-in-sap-s-4hana-sourcing-and-procurement/entering-an-invoice-for-stock-material_c5215178-39f9-4023-8c54-2a8976f9566a)
 
-- SAP Learning - Understanding Purchasing (MM Integration) (https://learning.sap.com/courses/configuring-additional-settings-in-financial-accounting-in-sap-s-4hana/understanding-purchasing-mm-integration)
+- SAP Learning - **Understanding Purchasing (MM Integration)** (https://learning.sap.com/courses/configuring-additional-settings-in-financial-accounting-in-sap-s-4hana/understanding-purchasing-mm-integration)
 
-- SAP Learning - Business Processes in SAP S/4HANA Sourcing and Procurement (https://learning.sap.com/courses/business-processes-in-sap-s-4hana-sourcing-and-procurement)
+- SAP Learning - **Business Processes in SAP S/4HANA Sourcing and Procurement** (https://learning.sap.com/courses/business-processes-in-sap-s-4hana-sourcing-and-procurement)
 
-- SAP Learning - Implementing SAP S/4HANA Cloud Private Edition, Sourcing and Procurement (https://learning.sap.com/learning-journeys/implementing-sap-s-4hana-cloud-private-edition-sourcing-and-procurement)
+- SAP Learning - **Implementing SAP S/4HANA Cloud Private Edition, Sourcing and Procurement** (https://learning.sap.com/learning-journeys/implementing-sap-s-4hana-cloud-private-edition-sourcing-and-procurement)
 
 Learning note: The process and transaction references in this portfolio are for conceptual learning. Exact applications, SAP Fiori apps, SAP GUI transactions, tolerances, and posting behavior depend on the SAP S/4HANA edition, release, organizational design, configuration, and authorization.
 
 ---
-
-**Repository location:** `06-three-way-match/three-way-match.md`
