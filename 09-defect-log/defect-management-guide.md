@@ -1,18 +1,22 @@
-## 0. Portfolio Boundary
+# P2P Defect Management Guide
+
+## Portfolio Boundary
 
 The defects in this folder are illustrative functional scenarios created to demonstrate defect-management methodology.
+
 They were not identified during an actual SAP implementation, SIT, UAT, or production-support engagement.
-Any status, root cause, resolution, or retest outcome shown is simulated for learning purposes.# P2P Defect Management Guide
+
+Any status, root cause, resolution approach, or retest outcome shown is simulated for learning purposes.
 
 ## 1. Purpose
 
-This guide explains how defects are recorded, assessed, corrected, retested, and closed during functional testing of the synthetic SAP S/4HANA Procure-to-Pay learning project.
+This guide explains an illustrative method for recording, assessing, correcting, retesting, and closing simulated defects in the synthetic SAP S/4HANA Procure-to-Pay learning project.
 
 > **Portfolio note:** All defects, users, document numbers, values, configuration findings, and evidence references are synthetic. This project does not represent a live customer implementation or production support activity.
 
 ## 2. What Is a Defect?
 
-A defect exists when the actual system result does not match an approved business requirement, configured design, expected accounting outcome, or documented test-case result.
+For this learning portfolio, an illustrative defect exists when a simulated result does not match a documented requirement, conceptual design, expected accounting outcome, or test-case expectation.
 
 ```text
 Business Requirement
@@ -21,9 +25,9 @@ Configuration / Master Data
         ↓
 Functional Test Case
         ↓
-Expected Result vs Actual Result
+Expected Result vs Simulated Actual Result
         ↓
-Defect, if they do not match
+Illustrative Defect, if they do not match
 ```
 
 Not every unexpected observation is a configuration defect. The cause may be test data, master data, user action, authorization, display timing, integration, or an incorrect expectation.
@@ -65,15 +69,15 @@ Every defect should include:
 - Detailed description
 - Exact reproduction steps
 - Expected result
-- Actual result
+- Simulated actual result
 - Severity and priority
-- Test stage, such as SIT or UAT
+- Illustrative test phase, such as Illustrative SIT Scenario or Illustrative UAT Scenario
 - Root-cause category and confirmed cause
 - Assigned owner
 - Reported and target dates
-- Fix description
-- Retest date and result
-- Evidence reference
+- Illustrative resolution approach
+- Illustrative retest date and outcome
+- Expected evidence type
 
 A statement such as “invoice not working” is not sufficient. A useful title is:
 
@@ -156,9 +160,9 @@ Root cause should be confirmed through analysis. Do not classify every failed te
 
 Repeat the test with the same data. Confirm that the result is not a temporary display or refresh issue.
 
-### Step 2: Capture evidence
+### Step 2: Define expected evidence
 
-Record only synthetic evidence, such as:
+Define only synthetic evidence types, such as:
 
 - Test-case ID
 - Synthetic PO or invoice number
@@ -193,15 +197,15 @@ Ask:
 | Access issue | Security / authorization team |
 | Test execution mistake | Test analyst |
 
-### Step 6: Record the fix
+### Step 6: Describe the illustrative resolution approach
 
-The fix description should say what changed. Avoid vague text such as “issue fixed.”
+The illustrative resolution approach should say what would change. Avoid vague text such as “issue fixed.”
 
 Better example:
 
 > Updated the workflow start condition so standard POs above INR 500,000 require the additional approval step.
 
-### Step 7: Retest
+### Step 7: Describe illustrative retesting
 
 Use the original failed scenario. Also test nearby boundary conditions.
 
@@ -218,11 +222,13 @@ After a configuration correction, repeat related successful tests to confirm the
 
 ## 8. Retesting and Closure Rules
 
+The lifecycle statuses below describe how a real project would operate. In this portfolio they are simulated labels and do not prove completed SAP test execution.
+
 A defect should be marked **Resolved** only when:
 
 - The correction is available in the test environment.
 - The original test case has been executed again.
-- Actual result matches expected result.
+- Simulated actual result matches expected result.
 - Relevant accounting or document-flow impact has been checked.
 - Retest evidence is recorded.
 
@@ -254,7 +260,7 @@ Invoice Quantity:  10 EA
 
 The system identifies the quantity variance and applies the configured invoice block.
 
-### Actual result
+### Simulated actual result
 
 The invoice posts without the expected payment block.
 
@@ -268,7 +274,7 @@ Check:
 - Invoice block reason
 - Whether the correct company code and test data were used
 
-### Retest
+### Illustrative retest
 
 After correction, repeat the same scenario and verify the invoice status, block reason, document history, and payment eligibility.
 
@@ -291,13 +297,13 @@ Metrics should be interpreted together. A lower defect count is not automaticall
 
 ```text
 07-test-scripts/
-└── Failed test case identifies the issue
+└── Designed test case supplies the linked scenario
 
 08-exception-analysis/
 └── Business and invoice exceptions are classified and analyzed
 
 09-defect-log/
-└── Confirmed functional defects are assigned, fixed, retested and closed
+└── Illustrative defects demonstrate assignment, resolution, retest and closure methodology
 ```
 
 An invoice exception is not automatically a software or configuration defect. For example, a missing GR may be a process-timing issue rather than a system defect.
@@ -306,11 +312,11 @@ An invoice exception is not automatically a software or configuration defect. Fo
 
 ### `Defect Log`
 
-Contains ten synthetic P2P defects linked to functional test cases, with severity, status, root cause, owner, dates, resolution, and retest tracking.
+Contains ten simulated P2P defect scenarios linked to designed functional test cases, with illustrative severity, status, root cause, owner, dates, resolution approach, and retest outcome.
 
 ### `Summary`
 
-Provides formula-based counts by status, severity, root cause, and retest result.
+Provides formula-based counts by status, severity, root cause, and illustrative retest outcome.
 
 ### `Severity Guide`
 
