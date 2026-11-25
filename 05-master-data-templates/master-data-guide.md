@@ -2,7 +2,7 @@
 
 ## 1. Purpose
 
-This folder is Step 05 of the `sap-p2p-process-design` learning portfolio.
+This folder is Step 05 of the `sap-s4hana-p2p-portfolio` learning portfolio.
 
 It contains simple, reusable templates for two important master-data objects used in the synthetic Nova Manufacturing Procure-to-Pay scenario:
 
